@@ -1,0 +1,235 @@
+/* ----------------- VARIABLES ----------------- */
+:root {
+  --bitduo-blue: #1e90ff;
+  --bitduo-dark: #0e0e0e;
+  --bitduo-light: #ffffff;
+  --bitduo-text: #1a1a1a;
+  --bitduo-muted: #666;
+
+  --font-base: 'Segoe UI', sans-serif;
+  --transition-fast: 0.3s ease;
+}
+
+/* ----------------- RESET ----------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-base);
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: var(--bitduo-light);
+  color: var(--bitduo-text);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+/* ----------------- MODO OSCURO ----------------- */
+body.dark {
+  background-color: #121212;
+  color: #e4e4e4;
+}
+
+/* ----------------- CONTENEDOR ----------------- */
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* ----------------- NAVBAR ----------------- */
+header {
+  background-color: rgba(255, 255, 255, 0.9);  /* Fondo blanco con transparencia */
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color var(--transition-fast), box-shadow var(--transition-fast);
+  border-bottom: 2px solid #f383f3;  /* Borde para resaltar el menu */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Sombra sutil */
+  border-radius: 10px;  /* Bordes redondeados */
+}
+
+body.dark header {
+  background-color: rgba(26, 26, 26, 0.9);  /* Fondo oscuro con transparencia */
+  border-bottom: 2px solid var(--bitduo-blue);  /* Borde azul claro */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  /* Sombra más intensa en modo oscuro */
+  border-radius: 10px;  /* Bordes redondeados también en modo oscuro */
+}
+
+
+body.dark header {
+  background-color: #1a1a1a;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo {
+  height: 50px;
+  transition: transform var(--transition-fast);
+}
+
+nav .logo:hover {
+  transform: scale(1.05);
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--bitduo-blue);  /* Color de texto por defecto */
+  font-weight: 500;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+/* Efecto hover en modo claro */
+nav ul li a:hover {
+  color: #f383f3;  /* Cambiar color en hover */
+  transform: scale(1.1);  /* Aumentar tamaño de la palabra al pasar el cursor */
+}
+
+/* Efecto hover en modo oscuro */
+body.dark nav ul li a:hover {
+  color: #f383f3;  /* Cambiar color en hover */
+  transform: scale(1.1);  /* Aumentar tamaño de la palabra al pasar el cursor */
+}
+
+
+
+
+/* ----------------- BOTÓN DE CAMBIO DE TEMA ----------------- */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;  /* Añadir relleno para dar espacio en ambos lados */
+}
+
+.toggle-btn {
+  background-color: transparent;
+  border: 2px solid var(--bitduo-blue);
+  color: var(--bitduo-blue);
+  border-radius: 6px;
+  padding: 0.4rem 0.6rem;  /* Espaciado dentro del botón */
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+  margin-left: 1rem;  /* Añadir margen a la izquierda */
+}
+
+/* Cuando el modo oscuro está activado */
+body.dark .toggle-btn {
+  margin-left: 1rem;  
+}
+
+
+
+/* ----------------- CONTENIDO ----------------- */
+main {
+  margin-top: 2rem;
+}
+
+h2, h3 {
+  margin-bottom: 1rem;
+  color: var(--bitduo-blue);
+}
+
+.presentacion p,
+.servicios ul li,
+.llamada p {
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+  color: inherit;
+}
+
+/* ----------------- LISTAS ----------------- */
+.servicios ul {
+  padding-left: 1.2rem;
+}
+
+.servicios ul li {
+  margin-bottom: 0.6rem;
+}
+
+/* ----------------- LLAMADA A LA ACCIÓN ----------------- */
+.llamada {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.btn-contacto {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.4rem;
+  font-weight: bold;
+  background-color: var(--bitduo-blue);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color var(--transition-fast);
+}
+
+.btn-contacto:hover {
+  background-color: #337acc;
+}
+
+/* ----------------- FOOTER ----------------- */
+footer {
+  margin-top: 4rem;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--bitduo-muted);
+  border-top: 1px solid #ccc;
+}
+
+footer .bit {
+  font-weight: bold;
+  color: var(--bitduo-blue);
+}
+
+footer .duo {
+  font-weight: bold;
+  color: #f383f3;
+}
+
+body.dark footer .duo {
+  color: #f383f3;
+}
+
+/* ----------------- RESPONSIVE ----------------- */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .llamada {
+    padding: 1rem;
+  }
+
+  .btn-contacto {
+    width: 100%;
+  }
+}

@@ -1,0 +1,59 @@
+.about {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.about .intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about .intro p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.mision-vision {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.mision-vision .box {
+  flex: 1 1 45%;
+  background-color: var(--bitduo-muted-light);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+body.dark .mision-vision .box {
+  background-color: #1a1a1a;
+  border: 1px solid var(--bitduo-blue);
+}
+
+.mision-vision .box:hover {
+  transform: translateY(-5px);
+}
+
+.valores {
+  margin-top: 3rem;
+}
+
+.valores h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.valores ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.valores li {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
