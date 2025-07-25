@@ -124,19 +124,20 @@ nav {
 
 .toggle-btn {
   background-color: transparent;
-  border: 2px solid var(--bitduo-blue);
-  color: var(--bitduo-blue);
+  border: 2px solid #f383f3; /* Rosa por defecto */
+  color: #f383f3;
   border-radius: 6px;
-  padding: 0.4rem 0.6rem;  /* Espaciado dentro del botón */
+  padding: 0.4rem 0.6rem;
   cursor: pointer;
   font-weight: bold;
-  transition: background-color var(--transition-fast), color var(--transition-fast);
-  margin-left: 1rem;  /* Añadir margen a la izquierda */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  margin-left: 1rem;
 }
 
 /* Cuando el modo oscuro está activado */
 body.dark .toggle-btn {
-  margin-left: 1rem;  
+  border-color: var(--bitduo-blue); /* Azul */
+  color: var(--bitduo-blue);
 }
 
 
