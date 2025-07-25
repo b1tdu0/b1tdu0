@@ -90,29 +90,30 @@ nav ul {
 }
 
 /* Estilo base para modo claro */
-nav ul li a {
+body:not(.dark) nav ul li a {
+  color: #f383f3 !important; /* Rosa por defecto */
   text-decoration: none;
-  color: #f383f3; /* Rosa por defecto */
   font-weight: 500;
   transition: color var(--transition-fast), transform var(--transition-fast);
 }
 
 /* Hover en modo claro */
-nav ul li a:hover {
-  color: var(--bitduo-blue); /* Azul en hover */
+body:not(.dark) nav ul li a:hover {
+  color: var(--bitduo-blue) !important; /* Azul en hover */
   transform: scale(1.1);
 }
 
 /* Estilo base para modo oscuro */
 body.dark nav ul li a {
-  color: var(--bitduo-blue); /* Azul por defecto */
+  color: var(--bitduo-blue) !important; /* Azul por defecto */
 }
 
 /* Hover en modo oscuro */
 body.dark nav ul li a:hover {
-  color: #f383f3; /* Rosita en hover */
+  color: #f383f3 !important; /* Rosita en hover */
   transform: scale(1.1);
 }
+
 
 
 /* ----------------- BOTÓN DE CAMBIO DE TEMA ----------------- */
