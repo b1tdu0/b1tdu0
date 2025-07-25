@@ -115,13 +115,6 @@ body.dark nav ul li a:hover {
 
 
 /* ----------------- BOTÓN DE CAMBIO DE TEMA ----------------- */
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 1.5rem;  /* Añadir relleno para dar espacio en ambos lados */
-}
-
 /* Estilo por defecto - MODO CLARO (rosa) */
 .toggle-btn {
   background-color: transparent;
@@ -132,13 +125,13 @@ nav {
   cursor: pointer;
   font-weight: bold;
   margin-left: 1rem;
-  transition: color 0.3s, border-color 0.3s, transform 0.3s; /* Añadir transición para color, borde y transform */
+  transition: color 0.3s ease, border-color 0.3s ease, transform 0.3s ease; /* Añadir transición para color, borde y transform */
 }
 
 /* Hover en modo claro - cambia a azul */
 .toggle-btn:hover {
-  color: #6ab7ff;  /* Color azul */
-  border-color: #6ab7ff;  /* Borde azul */
+  color: #6ab7ff !important;  /* Color azul */
+  border-color: #6ab7ff !important;  /* Borde azul */
   transform: scale(1.1);  /* Efecto de zoom */
 }
 
@@ -150,8 +143,8 @@ body.dark .toggle-btn {
 
 /* Hover en modo oscuro - cambia a rosa */
 body.dark .toggle-btn:hover {
-  color: #f383f3;  /* Color rosa */
-  border-color: #f383f3;  /* Borde rosa */
+  color: #f383f3 !important;  /* Color rosa */
+  border-color: #f383f3 !important;  /* Borde rosa */
   transform: scale(1.1);  /* Efecto de zoom */
 }
 
