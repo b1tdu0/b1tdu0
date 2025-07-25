@@ -99,7 +99,7 @@ nav ul li a {
 
 nav ul li a:hover {
   color: var(--bitduo-blue); /* Azul en hover */
-  transform: scale(1.1);
+  transform: scale(1.5);
 }
 
 /* Estilo para modo oscuro */
@@ -109,7 +109,7 @@ body.dark nav ul li a {
 
 body.dark nav ul li a:hover {
   color: #f383f3; /* Rosa en hover */
-  transform: scale(1.1);
+  transform: scale(1.5);
 }
 
 
