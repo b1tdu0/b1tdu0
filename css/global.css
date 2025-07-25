@@ -124,7 +124,7 @@ body.dark nav ul li a:hover {
   padding: 0.4rem 0.6rem;
   cursor: pointer;
   font-weight: bold;
-  margin-left: 1rem;
+  margin-left: 1.5rem;
   transition: color 0.3s ease, border-color 0.3s ease, transform 0.3s ease; /* Añadir transición para color, borde y transform */
 }
 
