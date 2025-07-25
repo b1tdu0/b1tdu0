@@ -178,28 +178,39 @@ h2, h3 {
   margin-bottom: 0.6rem;
 }
 
-/* ----------------- LLAMADA A LA ACCIÓN ----------------- */
-.llamada {
-  margin-top: 2.5rem;
-  text-align: center;
-}
+/* ---------- BOTÓN DE CONTACTO ---------- */
 
+/* MODO CLARO - botón rosa, hover azul */
 .btn-contacto {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.6rem 1.4rem;
   font-weight: bold;
-  background-color: var(--bitduo-blue);
+  background-color: #f383f3;  /* Rosa claro */
   color: white;
   border: none;
   border-radius: 8px;
   text-decoration: none;
-  transition: background-color var(--transition-fast);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .btn-contacto:hover {
-  background-color: #337acc;
+  background-color: #6ab7ff; /* Azul en hover */
+  transform: scale(1.05);    /* Pequeño efecto de zoom */
 }
+
+/* MODO OSCURO - botón azul, hover rosa */
+body.dark .btn-contacto {
+  background-color: #6ab7ff; /* Azul por defecto */
+  color: white;
+}
+
+body.dark .btn-contacto:hover {
+  background-color: #f383f3; /* Rosa en hover */
+  transform: scale(1.05);
+}
+
 
 /* ----------------- FOOTER ----------------- */
 footer {
