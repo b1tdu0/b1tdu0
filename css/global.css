@@ -89,29 +89,26 @@ nav ul {
   list-style: none;
 }
 
-/* Estilo base para modo claro */
-body:not(.dark) nav ul li a {
-  color: #f383f3 !important; /* Rosa por defecto */
+/* Claro */
+nav ul li a {
   text-decoration: none;
+  color: #f383f3 !important;  /* Rosa por defecto */
   font-weight: 500;
   transition: color var(--transition-fast), transform var(--transition-fast);
 }
 
-/* Hover en modo claro */
-body:not(.dark) nav ul li a:hover {
-  color: var(--bitduo-blue) !important; /* Azul en hover */
+nav ul li a:hover {
+  color: var(--bitduo-blue) !important;  /* Azul al pasar el cursor */
   transform: scale(1.1);
 }
 
-/* Estilo base para modo oscuro */
+/* Oscuro */
 body.dark nav ul li a {
-  color: var(--bitduo-blue) !important; /* Azul por defecto */
+  color: var(--bitduo-blue) !important;  /* Azul por defecto */
 }
 
-/* Hover en modo oscuro */
 body.dark nav ul li a:hover {
-  color: #f383f3 !important; /* Rosita en hover */
-  transform: scale(1.1);
+  color: #f383f3 !important;  /* Rosita al pasar el cursor */
 }
 
 
