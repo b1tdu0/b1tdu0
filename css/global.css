@@ -125,7 +125,7 @@ nav {
 .toggle-btn {
   background-color: transparent;
   border: 2px solid #f383f3; /* Rosa por defecto */
-  color: #f383f3;
+  color: #f383f3;             /* Rosa por defecto */
   border-radius: 6px;
   padding: 0.4rem 0.6rem;
   cursor: pointer;
@@ -136,8 +136,8 @@ nav {
 
 /* Cuando el modo oscuro está activado */
 body.dark .toggle-btn {
-  border-color: var(--bitduo-blue); /* Azul */
-  color: var(--bitduo-blue);
+  border-color: #6ab7ff; /* Azul claro directamente */
+  color: #6ab7ff;
 }
 
 
