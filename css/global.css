@@ -122,23 +122,39 @@ nav {
   padding: 0 1.5rem;  /* Añadir relleno para dar espacio en ambos lados */
 }
 
+/* MODO CLARO: estilo base */
 .toggle-btn {
   background-color: transparent;
   border: 2px solid #f383f3; /* Rosa por defecto */
-  color: #f383f3;             /* Rosa por defecto */
+  color: #f383f3;
   border-radius: 6px;
   padding: 0.4rem 0.6rem;
   cursor: pointer;
   font-weight: bold;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s;
   margin-left: 1rem;
 }
 
-/* Cuando el modo oscuro está activado */
-body.dark .toggle-btn {
-  border-color: #6ab7ff; /* Azul claro directamente */
+/* Hover en modo claro: rosa → azul */
+.toggle-btn:hover {
   color: #6ab7ff;
+  border-color: #6ab7ff;
+  transform: scale(1.1);
 }
+
+/* MODO OSCURO: estilo base */
+body.dark .toggle-btn {
+  color: #6ab7ff;
+  border-color: #6ab7ff;
+}
+
+/* Hover en modo oscuro: azul → rosa */
+body.dark .toggle-btn:hover {
+  color: #f383f3;
+  border-color: #f383f3;
+  transform: scale(1.1);
+}
+
 
 
 
