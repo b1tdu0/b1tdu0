@@ -89,26 +89,30 @@ nav ul {
   list-style: none;
 }
 
+/* Estilo base para modo claro */
 nav ul li a {
   text-decoration: none;
-  color: var(--bitduo-blue);  /* Color de texto por defecto */
+  color: #f383f3; /* Rosa por defecto */
   font-weight: 500;
   transition: color var(--transition-fast), transform var(--transition-fast);
 }
 
-/* Efecto hover en modo claro */
+/* Hover en modo claro */
 nav ul li a:hover {
-  color: #f383f3;  /* Cambiar color en hover */
-  transform: scale(1.1);  /* Aumentar tamaño de la palabra al pasar el cursor */
+  color: var(--bitduo-blue); /* Azul en hover */
+  transform: scale(1.1);
 }
 
-/* Efecto hover en modo oscuro */
+/* Estilo base para modo oscuro */
+body.dark nav ul li a {
+  color: var(--bitduo-blue); /* Azul por defecto */
+}
+
+/* Hover en modo oscuro */
 body.dark nav ul li a:hover {
-  color: #f383f3;  /* Cambiar color en hover */
-  transform: scale(1.1);  /* Aumentar tamaño de la palabra al pasar el cursor */
+  color: #f383f3; /* Rosita en hover */
+  transform: scale(1.1);
 }
-
-
 
 
 /* ----------------- BOTÓN DE CAMBIO DE TEMA ----------------- */
