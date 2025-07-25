@@ -122,33 +122,33 @@ nav {
   padding: 0 1.5rem;  /* Añadir relleno para dar espacio en ambos lados */
 }
 
-/* MODO CLARO: estilo base */
+/* Estilo por defecto - MODO CLARO (rosa) */
 .toggle-btn {
   background-color: transparent;
-  border: 2px solid #f383f3; /* Rosa por defecto */
+  border: 2px solid #f383f3;
   color: #f383f3;
   border-radius: 6px;
   padding: 0.4rem 0.6rem;
   cursor: pointer;
   font-weight: bold;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s;
   margin-left: 1rem;
+  transition: color 0.3s, border-color 0.3s, transform 0.3s;
 }
 
-/* Hover en modo claro: rosa → azul */
+/* Hover en modo claro - se vuelve azul */
 .toggle-btn:hover {
   color: #6ab7ff;
   border-color: #6ab7ff;
   transform: scale(1.1);
 }
 
-/* MODO OSCURO: estilo base */
+/* MODO OSCURO - estilo base (azul) */
 body.dark .toggle-btn {
   color: #6ab7ff;
-  border-color: #6ab7ff;
+  border: 2px solid #6ab7ff;
 }
 
-/* Hover en modo oscuro: azul → rosa */
+/* Hover en modo oscuro - se vuelve rosa */
 body.dark .toggle-btn:hover {
   color: #f383f3;
   border-color: #f383f3;
